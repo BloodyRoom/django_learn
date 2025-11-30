@@ -72,10 +72,21 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
+# kocop19851@besenica.com
+# kocop19851@besenica.comQ
+
 DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'db.sqlite3',
+    # }
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'HOST': "ep-restless-shape-aggi0ois-pooler.c-2.eu-central-1.aws.neon.tech",
+        'NAME': 'neondb',
+        'USER': 'neondb_owner',
+        'PASSWORD': 'npg_LoYJSK2y5fqQ',
+        'PORT': '5432'
     }
 }
 
