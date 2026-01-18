@@ -59,4 +59,7 @@ cd Django API
 cd atbapi
 docker build -t django .
 docker run -p 8000:8000 django
+docker run -p 8000:8000 -d django
+docker ps -a
+docker run -p 8000:8000 -d django
 ```
