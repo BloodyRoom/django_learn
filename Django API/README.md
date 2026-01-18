@@ -51,3 +51,12 @@ pip install drf-spectacular
 pip install djangorestframework-simplejwt
 pip install django-cors-headers
 ```
+
+# Docker command
+```
+git clone https://github.com/BloodyRoom/django_learn.git
+cd Django API
+cd atbapi
+docker build -t django .
+docker run -p 8000:8000 django
+```
