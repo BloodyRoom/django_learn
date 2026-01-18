@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-i5*47&p9i**5(a(5(o-$t)mny(#*fop0go%dy*i3)$_*7r(t-u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -42,6 +42,23 @@ INSTALLED_APPS = [
     'drf_spectacular',
     'corsheaders',
 ]
+
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [],  # or [BASE_DIR / 'templates']
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
+]
+
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',
